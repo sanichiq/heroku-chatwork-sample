@@ -1,6 +1,8 @@
 var express = require('express');
 var app = express();
 
+var ejs = require('ejs');
+
 app.set('port', (process.env.PORT || 5000));
 app.use(express.static(__dirname + '/public'));
 
@@ -12,7 +14,11 @@ app.set('options', options);
 
 // ルーティング設定
 app.get('/', function(request, response) {
-  response.send('Hello World!')
+  //response.send('Hello World!')
+  response.render('index.ejs', {
+    title: 'index',
+    content: '<p>Hello, World!</p>'
+  });
 });
 app.get('/rooms', function(request, response) {
   get_room(response, app.get('options').token);

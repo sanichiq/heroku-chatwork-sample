@@ -1,7 +1,7 @@
 {
   "name": "hoge",
   "version": "0.0.1",
-  "description": "",
+  "description": "- Node.js(Express) - Heroku",
   "main": "index.js",
   "scripts": {
     "start": "node index",
@@ -14,6 +14,18 @@
   },
   "dependencies": {
     "express": "^4.13.4",
-    "request": "^2.72.0"
-  }
+    "request": "^2.72.0",
+    "ejs": "^2.4.1"
+  },
+  "devDependencies": {
+    "ejs": "^2.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanichiq/heroku-chatwork-sample.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sanichiq/heroku-chatwork-sample/issues"
+  },
+  "homepage": "https://github.com/sanichiq/heroku-chatwork-sample#readme"
 }
